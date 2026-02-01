@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="javascript.js">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine&family=Roboto&display=swap">
+    <title>Navbar</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-logo">logo</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+        <div class="navmenu" onclick="showsidebar()"><img src="https://img.icons8.com/?size=100&id=84026&format=png&color=000000" alt="menu" height="26px"></div>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li onclick="hidesidebar()"><img src="https://img.icons8.com/?size=100&id=8112&format=png&color=000000" alt="cut" height="25px"></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </div>
+    <script>
+        function showsidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+         function hidesidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>

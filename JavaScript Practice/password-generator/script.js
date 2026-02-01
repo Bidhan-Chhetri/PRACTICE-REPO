@@ -14,4 +14,3 @@ generatePassword.addEventListener("click", () => {
     navigator.clipboard.writeText(input.value)
     console.log(password);
 });
-
