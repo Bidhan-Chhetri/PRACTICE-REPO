@@ -1,4 +1,4 @@
-/* 
+* 
 ////// For this challenge ///////
 
 - You will have to modify the HTML
@@ -36,7 +36,7 @@ h1 {
 .container {
     width: 80%;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .row {
@@ -44,12 +44,30 @@ h1 {
     display: flex;
 
     /* can't use yet */
-    /* gap: 100px; */
+     gap: 100px; 
+}
+
+.buttom-col {
+	display: flex;
+	gap: 120px;
+	width: 80%;
+	margin: auto;
+}
+
+.second-container {	
+	background-color: #136C72;
+  	margin: 50px 0 0;
 }
 
 .col {
     /* these are now flex items */
     width: 100%;
+    text-align: center;
+    color: #3A3A3A;
+}
+
+.head {
+	color: #87629A;
 }
 
 .hero {
