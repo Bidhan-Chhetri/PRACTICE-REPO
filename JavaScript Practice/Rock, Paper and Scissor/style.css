@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.game-title {
+	width: 100vw;
+	text-align: center;
+	font-size: 2rem;
+	height: auto;
+	background-color: brown;
+	color: white;
+	Padding: 30px;
+}
+
+.game-title h1 {
+	font-weight: bold;
+	font-family: Arial;
+}
+
+.game {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5% 0 5% 0;
+	gap: 10%;
+	padding: 5%;
+}
+
+.rps-img {
+	width: 30%;
+	text-align: center;
+}
+
+.rps-img img {
+	width: 80%;
+}
+
+.game-wins {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.wins {
+	display: flex;
+	gap: 20px;
+	font-size: 28px;
+	font-weight: 800;
+	font-family: Arial, san sarif;
+}
