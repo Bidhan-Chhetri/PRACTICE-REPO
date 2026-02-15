@@ -1,0 +1,29 @@
+body {
+    padding: 5px 10px 5px 10px;
+}
+
+ul li  a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+ul li a:hover{
+    color: royalblue;
+    transform: scale(1.012);
+}
+
+ul {
+    list-style: decimal;
+    line-height: 40px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li:hover {
+   color: royalblue;
+   transform: scale(1.012);
+   transition: transform 0.8s ease; 
+}
