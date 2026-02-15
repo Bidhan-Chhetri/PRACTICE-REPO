@@ -1,0 +1,168 @@
+/* easier layout and predictable sizing */
+*, *::before, *::after { box-sizing: border-box; }
+
+img, picture { max-width: 100%; height: auto; display: block; }
+
+html { font-size: 100%; } /* base for rems */
+body { margin: 0; line-height: 1.4; }
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+main {
+    height: 100%;
+    width: min(100%, 1100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: justify;
+    color: hsl(24, 5%, 18%);
+    box-sizing: border-box;
+}
+
+.omlet-img img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 10px;
+    justify-self: center;
+    object-fit: cover;
+}
+
+.content_section {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.preparation-time {
+    border-radius: 10px;
+    padding: 25px;
+    background-color: rgba(128, 0, 128, 0.072);
+}
+
+.preparation-time h3 {
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+}
+
+.preparation-time ul {
+    color: hsl(332, 51%, 32%);
+}
+
+.preparation-time ul li p {
+    display: inline;
+    color: hsl(24, 5%, 18%)
+}
+
+.preparation-time ul li {
+    margin: 10px;
+}
+
+.preparation-h4 {
+    display: inline;
+    margin-left: 20px;
+    font-weight: 600;
+    color: hsl(24, 5%, 18%);
+}
+
+.ingredients {
+    border-bottom: 0.3px solid black;
+    margin: 10px;
+    padding: 10px 0 10px 0;
+}
+.ingredients h3 {
+    color: hsl(332, 51%, 32%);
+}
+
+.ingredients ul{
+    padding: 5px;
+}
+
+.ingredients ul li {
+    padding-left: 20px;
+    color: hsl(332, 51%, 32%);
+}
+
+.ingredients ul li p {
+    color: hsl(24, 5%, 18%);
+    padding-left: 10px;
+}
+
+.instruction {
+    border-bottom: 0.3px solid black;
+    margin: 10px;
+    padding: 10px 0 10px 0;
+    color: hsl(332, 51%, 32%);         
+}
+
+.instruction ol{
+    padding: 0;
+}
+
+.instruction ol li{
+    padding-left: 20px;
+    color: hsl(332, 51%, 32%);
+    margin: 10px;
+}
+
+.instruction ol li h4 {
+    display: inline;
+    color: hsl(24, 5%, 18%);;
+}
+
+.instruction ol li p {
+    display: inline;
+    color: hsl(24, 5%, 18%);
+}
+
+.nutrition h3 {
+    color: hsl(332, 51%, 32%);
+}
+
+.nutrition div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 15px;
+    border-bottom: 0.3px outset black;
+}
+
+/* Layout */
+.container { padding: 1rem; }
+.header { display:flex; justify-content:space-between; align-items:center; gap:1rem; }
+
+/* Grid for recipe cards on larger screens */
+.cards { display: block; }
+@media (min-width: 768px) {
+  .container { max-width: 1100px; margin: 0 auto; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+}
+
+h1 { font-size: clamp(1.25rem, 4vw, 2.5rem); }
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+  .preparation-time { padding: 16px; }
+  .nutrition div { flex-direction: column; align-items: stretch; padding: 10px; }
+  .instruction ol li, .ingredients ul li { padding-left: 12px; margin: 6px 0; }
+  .preparation-h4 { display: block; margin-left: 0; margin-top: 8px; }
+  .omlet-img img { height: auto; }
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+  .content_section, .container, main { padding-left: 40px; padding-right: 40px; }
+}
+
+@media (min-width: 900px) {
+  main { padding: 40px 100px; }
+}
+
