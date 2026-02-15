@@ -8,8 +8,16 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
-	justify-content: space-between;
+	gap: 2rem;
 }
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 3rem;
+    gap: 5rem;
+  }
+}
+
 
 .game-title {
 	width: 100vw;
@@ -31,19 +39,23 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 4em;
-	padding: 5em;
+	gap: 4rem;
 }
 
 .rps-img {
-	width: 26%;
+	width: 20%;
 	text-align: center;
 }
 
 .rps-img img {
 	max-width: 100%;
 	min-width: 120px;
-} 
+}
+
+.rps-img:hover {
+	transform: scale(1.088);
+	transition: transform 0.3s ease;	
+}
 
 .game-wins {
 	display: flex;
@@ -54,9 +66,25 @@ body {
 
 .wins {
 	display: flex;
-	gap: 3rem;
+	flex-direction: column;
+	text-align: center;
+	gap: 2rem;
 	font-size: 2rem;
 	font-weight: 800;
 	font-family: Arial, san sarif;
 }
 
+.playGameBtn {
+	display: flex;
+	align-self: center;
+}
+
+.playGameBtn button {
+	font-size: 1.5rem;
+	font-weight: 600;
+	background-color: black;
+	border: none;
+	color: white;
+	border-radius: 1.3rem;
+	padding: 2rem 3rem 2rem 3rem;
+}
