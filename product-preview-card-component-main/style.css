@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.mainContainer {
+  max-width: calc(375px-2rem);
+  margin: auto;
+  border: none;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.image {
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 90em) {
+  .mainContainer {
+    max-width: 600px;
+    flex-direction: row;
+  }
+  .image {
+    width: 50%;
+  }
+  .innerContainer {
+    width: 50%;
+  }
+}
+
+.pTextHead {
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+}
+
+.heading h1 {
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+
+.mainSection p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: "Montserrat";
+  color: hsl(228, 12%, 48%);
+}
