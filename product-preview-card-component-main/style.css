@@ -14,23 +14,28 @@ body {
 }
 
 .mainContainer {
-  max-width: calc(375px-2rem);
+  max-width: calc(375px - 2rem);
   margin: auto;
   border: none;
   background-color: white;
   display: flex;
+  gap: auto;
   flex-direction: column;
+  height: 85%;
 }
 
 .innerContainer {
   display: flex;
   flex-direction: column;
+  height: 50%;
   gap: 1rem;
   padding: 2rem;
+  height: 60%;
 }
 
 .image {
   width: 100%;
+  height: 40%;
 }
 
 .image img {
@@ -42,24 +47,31 @@ body {
 @media (min-width: 90em) {
   .mainContainer {
     max-width: 600px;
+    height: auto;
     flex-direction: row;
   }
+
   .image {
     width: 50%;
+    height: auto;
   }
+
   .innerContainer {
     width: 50%;
   }
 }
 
 .pTextHead {
-  letter-spacing: 5px;
+  letter-spacing: 0.3rem;
   color: hsl(228, 12%, 48%);
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
 .heading h1 {
-  font-size: 1.8rem;
   font-weight: bolder;
+  font-style: "Fraunces";
 }
 
 .mainSection p {
@@ -67,4 +79,35 @@ body {
   font-weight: 500;
   font-family: "Montserrat";
   color: hsl(228, 12%, 48%);
+}
+
+.priceHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.priceHead h1 {
+  color: hsl(158, 42%, 38%);
+  font-family: "Fraunces";
+}
+
+.priceHead p {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+}
+
+.cart button {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  background-color: hsl(158, 42%, 38%);
+  gap: 10px;
+  width: 100%;
+  padding: 1rem;
 }
