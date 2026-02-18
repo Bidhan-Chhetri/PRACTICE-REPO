@@ -61,6 +61,12 @@ main {
   }
 }
 
+@media (max-width: 375px) {
+  .mainContainer {
+    height: auto;
+  }
+}
+
 .pTextHead {
   letter-spacing: 0.3rem;
   color: hsl(228, 12%, 48%);
