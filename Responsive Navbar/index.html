@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive Navbar</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul class="leftNav">
+          <li>Bidhan</li>
+        </ul>
+        <ul class="rightNav" id="responsiveMenu">
+          <li>Home</li>
+          <li>About</li>
+          <li>Service</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
+        <div class="menuBtn" onclick="openMenu()">
+          <img src="images/menu.svg" alt="menu button" />
+        </div>
+        <div class="closeMenuBtn" onclick="closeMenu()">
+          <img src="images/close.svg" alt="close menu button" />
+        </div>
+      </nav>
+    </main>
+    <script src="script.js" defer></script>
+  </body>
+</html>
